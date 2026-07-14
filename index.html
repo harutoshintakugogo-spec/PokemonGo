@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Pokémon GO公式が発表したイベント情報を発表日順に整理する非公式タイムライン" />
+  <title>GO EVENT LOG｜Pokémon GO公式発表タイムライン</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav wrap">
+      <a class="brand" href="#top"><span class="brand-ball"></span><span>GO EVENT LOG</span></a>
+      <a class="official-link" href="https://pokemongo.com/news" target="_blank" rel="noopener">公式ニュース ↗</a>
+    </nav>
+    <div id="top" class="hero-content wrap">
+      <p class="eyebrow">OFFICIAL ANNOUNCEMENT TIMELINE</p>
+      <h1>公式発表を、<br><span>時系列で追う。</span></h1>
+      <p class="hero-copy">Pokémon GO公式が公開したイベント情報を、発表日順に整理。開催期間や重要ポイントもひと目で確認できます。</p>
+      <div class="hero-stats">
+        <div><strong id="announcementCount">0</strong><span>掲載発表</span></div>
+        <div><strong id="activeCount">0</strong><span>開催中</span></div>
+        <div><strong id="upcomingCount">0</strong><span>開催予定</span></div>
+        <div><strong id="favoriteCount">0</strong><span>保存済み</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap main-content">
+    <section class="toolbar">
+      <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="発表名・ポケモン・ボーナスで検索" /></label>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">すべて</button>
+        <button class="filter" data-filter="active">開催中</button>
+        <button class="filter" data-filter="upcoming">開催予定</button>
+        <button class="filter" data-filter="announced">日程未解析</button>
+        <button class="filter" data-filter="past">終了</button>
+        <button class="filter" data-filter="favorite">★ 保存済み</button>
+      </div>
+    </section>
+
+    <section class="notice">
+      <span class="pulse"></span>
+      <p><strong id="todayLabel"></strong> 開催状態は端末の日時から自動判定。<span id="syncLabel">更新情報を読み込み中…</span></p>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <div><p class="eyebrow dark">LATEST OFFICIAL NEWS</p><h2>公式発表タイムライン</h2></div>
+        <div class="sort-control"><label for="sortSelect">並び順</label><select id="sortSelect"><option value="announced-desc">新しい発表順</option><option value="event-asc">開催日が近い順</option><option value="event-desc">開催日が新しい順</option></select></div>
+      </div>
+      <p id="resultCount" class="result-count"></p>
+      <div id="timeline" class="timeline"></div>
+      <div id="emptyState" class="empty-state" hidden><div class="empty-ball"></div><h3>該当する発表がありません</h3><p>検索語や絞り込み条件を変えてください。</p></div>
+    </section>
+
+    <section class="update-guide">
+      <div><p class="eyebrow dark">UPDATE FLOW</p><h2>自動更新の流れ</h2></div>
+      <div class="guide-grid">
+        <article><b>01</b><h3>公式ニュースを巡回</h3><p>GitHub Actionsが6時間ごとにPokémon GO公式ニュースを確認します。</p></article>
+        <article><b>02</b><h3>新着を安全に統合</h3><p>新しい公式記事だけを追加し、既存のイベント情報は保持します。</p></article>
+        <article><b>03</b><h3>サイトへ自動反映</h3><p>更新されたJSONをGitHub Pagesへ再公開し、時系列で表示します。</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-inner"><div><strong>GO EVENT LOG</strong><p>Pokémon GO 非公式ファンサイト</p></div><p>掲載内容は公式発表の要約です。変更・中止の可能性があるため、参加前に必ず公式ページをご確認ください。</p></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
