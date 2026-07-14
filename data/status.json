@@ -1,1 +1,9 @@
-{"lastUpdated": null, "lastRun": null, "fetched": 0, "added": 0, "message": "初回の自動取得前です"}
+{
+  "lastUpdated": "2026-07-14T14:40:20.326137+00:00",
+  "lastRun": "2026-07-14T14:40:20.326137+00:00",
+  "fetched": 30,
+  "added": 28,
+  "total": 30,
+  "errors": [],
+  "message": "30件確認し、28件追加"
+}
