@@ -1,0 +1,30 @@
+[
+  {
+    "id": "water-festival-2026",
+    "announcedAt": "2026-07-14T12:00:00+09:00",
+    "title": "ウルトラアンロック：ウォーターフェスティバル",
+    "category": "ウルトラアンロック",
+    "icon": "💧",
+    "start": "2026-08-18T10:00:00+09:00",
+    "end": "2026-08-24T20:00:00+09:00",
+    "summary": "サシカマスとウッウがPokémon GOに初登場。イベントの進行にあわせて捕獲XPとほしのすなのボーナスが強化されます。",
+    "highlights": ["サシカマス初登場", "ウッウ初登場", "捕獲ほしのすな最大5倍"],
+    "url": "https://pokemongo.com/news/water-festival-2026",
+    "source": "official",
+    "autoImported": false
+  },
+  {
+    "id": "anniversary-ultra-unlock",
+    "announcedAt": "2026-07-14T11:00:00+09:00",
+    "title": "ウルトラアンロック：10周年記念エディション",
+    "category": "ウルトラアンロック",
+    "icon": "🎉",
+    "start": "2026-07-21T10:00:00+09:00",
+    "end": "2026-07-27T20:00:00+09:00",
+    "summary": "各地方の最初のパートナーポケモンや衣装ポケモンが登場。期間後半には捕獲XPが最大10倍になります。",
+    "highlights": ["捕獲XP 最大10倍", "歴代の御三家", "限定技を習得可能"],
+    "url": "https://pokemongo.com/news/ultraunlock-10th-anniversary-edition",
+    "source": "official",
+    "autoImported": false
+  }
+]
